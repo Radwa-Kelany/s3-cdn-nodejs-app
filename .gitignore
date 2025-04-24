@@ -1,23 +1,20 @@
 express/.env
 express/node_modules
-react/node_modules
+react/my-app/node_modules
 
-react/.pnp
-react/.pnp.js
+react/my-app/.pnp
+react/my-app/.pnp.js
 
+react/my-app/coverage
 
-react/coverage
+react/my-app/build
 
+react/my-app/.DS_Store
+react/my-app/.env.local
+react/my-app/.env.development.local
+react/my-app/.env.test.local
+react/my-app/.env.production.local
 
-react/build
-
-
-react/.DS_Store
-react/.env.local
-react/.env.development.local
-react/.env.test.local
-react/.env.production.local
-
-react/npm-debug.log*
-react/yarn-debug.log*
-react/yarn-error.log*
+react/my-app/npm-debug.log*
+react/my-app/yarn-debug.log*
+react/my-app/yarn-error.log*
