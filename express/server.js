@@ -71,13 +71,11 @@ app.get('/api/posts', async (req, res) => {
       keyPairId: process.env.CLOUDFRONT_KEY_PAIR_ID,
     });
   }
-  console.log(posts);
   res.status(201).send(posts);
 });
 
 app.delete('/api/posts/:id', async (req, res) => {
   const imageId = +req.params.id;
-  console.log(imageId);
   const post = await prisma.posts.findUnique({ where: { id: imageId } });
 
   await deleteFile(post.imageName);
