@@ -1,0 +1,36 @@
+{
+  "name": "simple-form-s3-nodejs",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "npx nodemon server.js",
+    "prisma:generate": "prisma generate",
+    "prisma:watch": "prisma generate --watch",
+    "postinstall": "prisma generate"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.787.0",
+    "@aws-sdk/cloudfront-signer": "^3.775.0",
+    "@aws-sdk/s3-request-presigner": "^3.787.0",
+    "@prisma/client": "^6.6.0",
+    "aws-sdk": "^2.1692.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "generate": "^0.14.0",
+    "multer": "^1.4.5-lts.2",
+    "nodemon": "^3.1.9",
+    "openssl": "^2.0.0",
+    "pg": "^8.15.1",
+    "sharp": "^0.34.1"
+  },
+  "devDependencies": {
+    "prisma": "^6.6.0"
+  }
+}
